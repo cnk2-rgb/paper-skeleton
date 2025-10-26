@@ -31,10 +31,24 @@
 
 %%%%%%%%%%%%%%%%%%%%  TITLE/AUTHORS  %%%%%%%%%%%%%%%%%%%%%
 
-\title{Title}
+\title{Bias, Omission, and Control: How Censorship Shapes LLM Responses}
 
-\author{ Clarice Kim }
-\author{ Allison Lee }
+\author{ 
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+Allison Lee \\
+University of Chicago \\
+Chicago, IL, USA
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+Clarice Kim \\
+University of Chicago \\
+Chicago, IL, USA
+\end{minipage}
+}
+
 
 \titlespacing\section{0pt}{*1.8}{*1.1}
 \titlespacing\subsection{0pt}{*1.5}{*1.1}
@@ -44,18 +58,69 @@
 
 \begin{document}
 
-\input{abstract}
+\abstract{
+Large language models (LLMs) are increasingly being integrated into everyday
+technologies, and the integrity and diversity of the data they are trained on
+have become critical public concerns. Online information is not uniformly
+accessible as governments, organizations, ISPs employ content filtering,
+website blocking, and other censorship methods to restrict access to specific
+online content. Consequences of censorship on society and humans are generally
+well documented. However, its effects on LLMs that rely on large-scale internet
+data for training remain less understood. It is important to understand how
+censorship shapes what LLMs can “see” and “learn” to ensure fairness and
+robustness of these models, in addition to preserving the free flow of
+knowledge in artificial intelligence (AI) systems.
+}
 
 \maketitle
 
-\input{introduction}
-\input{related}
+\section{Introduction}
+This project investigates how internet censorship techniques: blocking, firewalls, flooding, and disinformation, affect the training data and outputs of LLMs. Censorship limits the model’s exposure to certain kinds of online content, which could result in biased or incomplete outputs. We will aim to characterize how different forms of censorship, such as firewalls, data filtering, content blocking, and flooding, may alter the composition of LLM training. We will then analyze how altered data inputs influence model outputs in relation to information omission, bias, and factual consistency. Lastly, we will evaluate the implications of censorship techniques being repurposed for intellectual property (IP) protection against large-scale data scraping.
+
+We will also conduct exploratory experiments in which we expose LLMs to examples of censorship techniques and then re-prompt them with identical inputs to compare their outputs. While this approach does not fully replicate the effects of training on censored data, it offers a useful preliminary indication of how exposure to censorship patterns may influence model behavior.
+
+Ahmed and Jeffrey have examined how online censorship shapes large language models (2024) and Wu et al. studied the infrastructural and technical mechanisms of internet censorship, specifically how China’s Great Firewall detects and blocks fully encrypted traffic. Our project will draw from additional literature noted in the related work section to extend these two lines of inquiry: bridging their perspectives and findings, and investigating the resulting implications of model training and data curation. We also intend to briefly explore if there may be opportunities to repurpose censorship infrastructures to manage intellectual property boundaries in AI training data.
+
+
+
+\section{Related Work}
+
+For our project, we plan to review prior literature along several thematic lines to ground our research and clarify its contributions. To examine the general impact of online censorship on LLMs, we will reference Ahmed and Knockel’s publication [Ahmed and Knockel, 2024], which analyzes how models respond differently to prompts in censored versus less-censored languages, highlighting the ways censorship can shape outputs and propagate information manipulation. We will also reference Glukhov et al.’s publication [Glukhov et al., 2023]. To understand how censorship reduces the availability of data, we will consult Hoang et al. [Hoang et al., 2024] and related studies on firewall and WAF systems [Wu et al.], which document how technical mechanisms can limit LLM access to certain web content, and explore the resulting gaps in training data. To investigate how censored or biased data is processed and manifested by LLMs, we will examine studies on bias in LLM outputs [Yang and Roberts, 2021; Hovy and Prabhumoye, 2021] and the omission of sensitive information [Noels et al., 2025], as well as work on disinformation and “data poisoning” [Jiang et al., 2023; Danet, 2025; Maus et al., 2023], which provide insight into how altered or restricted inputs can distort model behavior. Finally, to contextualize potential applications of censorship-like techniques for intellectual property protection, we will review research on AI and copyright [Wei et al., 2024; Barbera, 2025] to understand existing methods and limitations for controlling model access to proprietary information. Building on these prior works, our project contributes by experimentally exploring the effects of exposing LLMs to censorship patterns, comparing outputs across controlled prompts, and assessing how such exposure might influence information propagation, bias, and IP-related considerations—an area not fully addressed by previous research.
+
+
+\section{Project Preparation}
+We plan to divide the project into two stages: literature review of types of censorship and their researched impact on LLMs, in addition to a practical study simulating and comparing inputting censored versus uncensored data into commercial LLMs. In the first stage, we will examine the impact of censorship on the input data. We will also need to understand how the biased data is ultimately processed within LLM and then outputted, drawing on the mechanics of how LLMs operate. 
+
+The data we will use for this stage draws on our preliminary research, suggesting that firewalls, flooding, and disinformation may have impacts on the outputs of LLMs. Broadly speaking, we will investigate two frameworks of censorship: omitting truthful information or adding false information to model input data. We must gather further data to understand specifics on how censorship impacts input data. From here, we will draw on literature about how LLMs and natural language processing techniques process biased data. We will then investigate specific techniques, such as how word embeddings can encode bias in models [Yang and Roberts, 2021]. Once we establish ways in how censorship techniques impact input data, we aim to draw from research to discuss LLM processing of biased data. Finally, we will extend our understanding to analyze its impact on users, such as in the case of differing outputs from LLMs about events in Chinese history prompted in traditional Chinese versus simplified Chinese [Yang and Roberts, 2021].  
+
+The second stage will be to take our theoretical understandings and apply them to an experimental study of LLMs. Our study is inspired by Ahmed and Knockel’s study which explores the impacts of censorship on LLMs. In their study, they interact with a commercial LLM, which they treat as a black-box [Ahmed and Knockel, 2024]. For our practical experiment, we will expose LLMs to censorship techniques in a controlled setting and observe how this exposure influences their outputs. First, we will create a control trial by providing LLMs with fabricated “training” prompts. Then, we will provide the model with fabricated censored or restricted information (text that omits sensitive topics or follows typical censorship rules from control trial’s training data). After this, we will query the model using a standardized set of prompts before and after the censored exposure. By comparing the outputs, we aim to identify differences such as omitted details, altered phrasing, or other indications that the model reflects the censored input.
+
+
+\section{Hypothesis}
+On average, we would expect each trial to differ in output, and trials to differ across different models. We acknowledge, however, that models have mechanisms to filter unnecessary information or synthesize missing information. The model output may not differ significantly depending on the extent of the manipulation of the base prompt. There may not be a way to quantify outputs of data, but we plan to ensure as much transparency as possible by recording trial responses in a table to compare the control prompt and variables modified.
+
+
+\section{Evaluation}
+For our evaluation of censorship techniques and their impact on LLMs, we will analyze and then compare each of the different techniques. To guide our evaluation, we have generated questions such as: Are the outputs of LLMs different for each mode of censorship? Is there a certain threshold of input data bias the model can filter? Do the different censorship techniques change the way each model processes the data? While quantitative answers may not exist for some of these questions, comparing different modes of censorship will help provide reference points for our evaluation. We plan to make our comparisons more concrete by researching measurements for the degree of censorship on input data. We can similarly research ways to measure the outputs of LLMs.
+
+As for our experimental study, we will evaluate the results in a quantitative manner by categorizing similar types of behavior in model responses and counting the occurrence within each category. Moreover, we can quantify the degree of censorship applied to our inputs by calculating the percentage of change in training data between different trials. We can qualitatively evaluate our study by analyzing whether it matches previous research—in other words, if it is rational to predict a specific model output given the variables we changed and kept the same. 
+
+We acknowledge the limitations in our experimental study. Our approach does not constitute full model training, as the LLM will not update its internal weights; rather, it simulates exposure to censored data. Despite this limitation, the experiment provides a practical way to gauge how censorship in input data could shape outputs, revealing potential biases and information gaps in the model’s responses. 
+
+Finally, we can briefly explore the implications of our study on protecting intellectual property, particularly seeing if specific censorship methods we cited in our research can be repurposed to protect certain online content from being outputted by an LLM. 
+
+
+\section{Ethics}
+Regarding the ethical implications of our project, our models may repeat the same types of bias that exists in censored information because we are testing how censorship may impact LLMs. As an example, they may leave out certain opinions or topics that censorship typically hides. This is especially important for our experiment, where we expose the model to examples of censored information—not actually train it on real-life censored training data. Because this exposure does not fully simulate how a model learns from censored training data, it introduces another limitation: the effects we observe may reflect short-term bias from exposure rather than deeper, structural bias that would appear through full training. This means our results could be partial or misleading if interpreted without caution. We also risk reinforcing the same biases we are trying to study, since the model’s outputs may already be influenced by the censored inputs we provide. To address this, we will clearly document our process, interpret results carefully, and emphasize that our findings are exploratory rather than definitive.
+
+\section{References}
+
 \label{lastpage}\input{conclusion}
 
 \microtypesetup{protrusion=false}
 
 \newpage
-\printbibliography
+%%\printbibliography
 
 \vfill
 \pagebreak
