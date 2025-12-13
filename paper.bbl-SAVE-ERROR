@@ -1,0 +1,383 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{edpb2025aiPrivacyRisksLLMs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=35df0ddfe57a94a18edf54382106578d}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Barberà\bibnamedelima I.},
+           giveni={B\bibinitperiod\bibinitdelim I\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{35df0ddfe57a94a18edf54382106578d}
+      \strng{fullhash}{35df0ddfe57a94a18edf54382106578d}
+      \strng{bibnamehash}{35df0ddfe57a94a18edf54382106578d}
+      \strng{authorbibnamehash}{35df0ddfe57a94a18edf54382106578d}
+      \strng{authornamehash}{35df0ddfe57a94a18edf54382106578d}
+      \strng{authorfullhash}{35df0ddfe57a94a18edf54382106578d}
+      \field{extraname}{1}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{AI Privacy Risks and Mitigations Large Language Models}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.edpb.europa.eu/system/files/2025-04/ai-privacy-risks-and-mitigations-in-llms.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.edpb.europa.eu/system/files/2025-04/ai-privacy-risks-and-mitigations-in-llms.pdf
+      \endverb
+    \endentry
+    \entry{jiang2023forcinggenerativemodelsdegenerate}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=714bec10d47355911367df16f64e18e9}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Jiang\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{714bec10d47355911367df16f64e18e9}
+      \strng{fullhash}{714bec10d47355911367df16f64e18e9}
+      \strng{bibnamehash}{714bec10d47355911367df16f64e18e9}
+      \strng{authorbibnamehash}{714bec10d47355911367df16f64e18e9}
+      \strng{authornamehash}{714bec10d47355911367df16f64e18e9}
+      \strng{authorfullhash}{714bec10d47355911367df16f64e18e9}
+      \field{extraname}{2}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Forcing Generative Models to Degenerate Ones: The Power of Data Poisoning Attacks}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2312.04748
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2312.04748
+      \endverb
+    \endentry
+    \entry{firewall-encrypted}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b617b85ac1dd0b2d03a8a7d589c46f66}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Wu\bibnamedelima M.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{b617b85ac1dd0b2d03a8a7d589c46f66}
+      \strng{fullhash}{b617b85ac1dd0b2d03a8a7d589c46f66}
+      \strng{bibnamehash}{b617b85ac1dd0b2d03a8a7d589c46f66}
+      \strng{authorbibnamehash}{b617b85ac1dd0b2d03a8a7d589c46f66}
+      \strng{authornamehash}{b617b85ac1dd0b2d03a8a7d589c46f66}
+      \strng{authorfullhash}{b617b85ac1dd0b2d03a8a7d589c46f66}
+      \field{extraname}{3}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How the Great Firewall of China Detects and Blocks Fully Encrypted Traffic}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.usenix.org/system/files/sec23fall-prepub-234-wu-mingshi.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.usenix.org/system/files/sec23fall-prepub-234-wu-mingshi.pdf
+      \endverb
+    \endentry
+    \entry{unknown2023floodingLLMs}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c6657aead774196b65c4408e99fbe68a}{%
+           family={D.},
+           familyi={D\bibinitperiod},
+           given={Danet},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6657aead774196b65c4408e99fbe68a}
+      \strng{fullhash}{c6657aead774196b65c4408e99fbe68a}
+      \strng{bibnamehash}{c6657aead774196b65c4408e99fbe68a}
+      \strng{authorbibnamehash}{c6657aead774196b65c4408e99fbe68a}
+      \strng{authornamehash}{c6657aead774196b65c4408e99fbe68a}
+      \strng{authorfullhash}{c6657aead774196b65c4408e99fbe68a}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{LLM Grooming: A New Cognitive Threat to Generative AI}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5461315
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5461315
+      \endverb
+    \endentry
+    \entry{unknown2023censorshipLLMsMLOrSecurity}{article}{}
+      \name{author}{1}{}{%
+        {{hash=65dbd5d0e4a44b3f73669f83b6aca432}{%
+           family={Glukhov},
+           familyi={G\bibinitperiod},
+           given={D.\bibnamedelimi et\bibnamedelima al.},
+           giveni={D\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod}}}%
+      }
+      \strng{namehash}{65dbd5d0e4a44b3f73669f83b6aca432}
+      \strng{fullhash}{65dbd5d0e4a44b3f73669f83b6aca432}
+      \strng{bibnamehash}{65dbd5d0e4a44b3f73669f83b6aca432}
+      \strng{authorbibnamehash}{65dbd5d0e4a44b3f73669f83b6aca432}
+      \strng{authornamehash}{65dbd5d0e4a44b3f73669f83b6aca432}
+      \strng{authorfullhash}{65dbd5d0e4a44b3f73669f83b6aca432}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Censorship in LLMs - ML or Security Problem?}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/2307.10719
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/2307.10719
+      \endverb
+    \endentry
+    \entry{hoang2024howcensorshipreducesavailability}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=235da4d85cf45486b2a8464788ed6360}{%
+           family={Hoang},
+           familyi={H\bibinitperiod},
+           given={N.\bibnamedelimi P.\bibnamedelimi et\bibnamedelima al.},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod}}}%
+      }
+      \strng{namehash}{235da4d85cf45486b2a8464788ed6360}
+      \strng{fullhash}{235da4d85cf45486b2a8464788ed6360}
+      \strng{bibnamehash}{235da4d85cf45486b2a8464788ed6360}
+      \strng{authorbibnamehash}{235da4d85cf45486b2a8464788ed6360}
+      \strng{authornamehash}{235da4d85cf45486b2a8464788ed6360}
+      \strng{authorfullhash}{235da4d85cf45486b2a8464788ed6360}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GFWeb: Measuring the Great Firewall's Web Censorship at Scale}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.usenix.org/system/files/sec24fall-prepub-310-hoang.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.usenix.org/system/files/sec24fall-prepub-310-hoang.pdf
+      \endverb
+    \endentry
+    \entry{hovy2022fiveSourcesOfBiasNLP}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b36404bbdc8f14782241df824d0e8fe0}{%
+           family={Hovy},
+           familyi={H\bibinitperiod},
+           given={D.\bibnamedelimi et\bibnamedelima al.},
+           giveni={D\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod}}}%
+      }
+      \strng{namehash}{b36404bbdc8f14782241df824d0e8fe0}
+      \strng{fullhash}{b36404bbdc8f14782241df824d0e8fe0}
+      \strng{bibnamehash}{b36404bbdc8f14782241df824d0e8fe0}
+      \strng{authorbibnamehash}{b36404bbdc8f14782241df824d0e8fe0}
+      \strng{authornamehash}{b36404bbdc8f14782241df824d0e8fe0}
+      \strng{authorfullhash}{b36404bbdc8f14782241df824d0e8fe0}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Five Sources of Bias in Natural Language Processing}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://pmc.ncbi.nlm.nih.gov/articles/PMC9285808/pdf/LNC3-15-0.pdf
+      \endverb
+      \verb{url}
+      \verb https://pmc.ncbi.nlm.nih.gov/articles/PMC9285808/pdf/LNC3-15-0.pdf
+      \endverb
+    \endentry
+    \entry{impactononline}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=a64a37b769b41f8f261e6ef35421e6e6}{%
+           family={M.},
+           familyi={M\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5ccb4f3a6d4f95b7a3c09e9512d191ac}{%
+           family={J.},
+           familyi={J\bibinitperiod},
+           given={Knockel},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{4f3dc9c6517ab727dcb4496404aeb83b}
+      \strng{fullhash}{4f3dc9c6517ab727dcb4496404aeb83b}
+      \strng{bibnamehash}{4f3dc9c6517ab727dcb4496404aeb83b}
+      \strng{authorbibnamehash}{4f3dc9c6517ab727dcb4496404aeb83b}
+      \strng{authornamehash}{4f3dc9c6517ab727dcb4496404aeb83b}
+      \strng{authorfullhash}{4f3dc9c6517ab727dcb4496404aeb83b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Impact of Online Censorship on LLMs}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.petsymposium.org/foci/2024/foci-2024-0006.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.petsymposium.org/foci/2024/foci-2024-0006.pdf
+      \endverb
+    \endentry
+    \entry{maus2023blackboxadversarialprompting}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=bc3c460b4dec7741e9c40844b25e282d}{%
+           family={Maus},
+           familyi={M\bibinitperiod},
+           given={Natalie},
+           giveni={N\bibinitperiod}}}%
+        {{hash=af9b6149ec495d4a499c50c2fbfa35e8}{%
+           family={Chao},
+           familyi={C\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b253086f8939563210b4a6114613aad7}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=627bb6a2d8d8a84e33faddfbc299827a}{%
+           family={Gardner},
+           familyi={G\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{06fc1543896ac2c788044e1a92e364b1}
+      \strng{fullhash}{f983aea134c0c76eea5bd0ed96a28fe6}
+      \strng{bibnamehash}{f983aea134c0c76eea5bd0ed96a28fe6}
+      \strng{authorbibnamehash}{f983aea134c0c76eea5bd0ed96a28fe6}
+      \strng{authornamehash}{06fc1543896ac2c788044e1a92e364b1}
+      \strng{authorfullhash}{f983aea134c0c76eea5bd0ed96a28fe6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Black Box Adversarial Prompting for Foundation Models}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2302.04237
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2302.04237
+      \endverb
+    \endentry
+    \entry{noels2025whatLLMsDoNotTalkAbout}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0f8c08a4a65d635d93eefa372f654067}{%
+           family={Noels},
+           familyi={N\bibinitperiod},
+           given={S.\bibnamedelimi et\bibnamedelima al.},
+           giveni={S\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f8c08a4a65d635d93eefa372f654067}
+      \strng{fullhash}{0f8c08a4a65d635d93eefa372f654067}
+      \strng{bibnamehash}{0f8c08a4a65d635d93eefa372f654067}
+      \strng{authorbibnamehash}{0f8c08a4a65d635d93eefa372f654067}
+      \strng{authornamehash}{0f8c08a4a65d635d93eefa372f654067}
+      \strng{authorfullhash}{0f8c08a4a65d635d93eefa372f654067}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What Large Language Models Do Not Talk About: An Empirical Study of Moderation and Censorship Practices}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/2504.03803
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/2504.03803
+      \endverb
+    \endentry
+    \entry{wei2024copyrighttakedownLLMs}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=4023f7f30bd2682d81fad67416ea7636}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={B.\bibnamedelimi et\bibnamedelima al.},
+           giveni={B\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod}}}%
+      }
+      \strng{namehash}{4023f7f30bd2682d81fad67416ea7636}
+      \strng{fullhash}{4023f7f30bd2682d81fad67416ea7636}
+      \strng{bibnamehash}{4023f7f30bd2682d81fad67416ea7636}
+      \strng{authorbibnamehash}{4023f7f30bd2682d81fad67416ea7636}
+      \strng{authornamehash}{4023f7f30bd2682d81fad67416ea7636}
+      \strng{authorfullhash}{4023f7f30bd2682d81fad67416ea7636}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Evaluating Copyright Takedown Methods for Language Models}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://neurips.cc/virtual/2024/poster/97618
+      \endverb
+      \verb{url}
+      \verb https://neurips.cc/virtual/2024/poster/97618
+      \endverb
+    \endentry
+    \entry{yang2021censoredbiaseddataLLMs}{article}{}
+      \name{author}{2}{}{%
+        {{hash=301f18e24d448e76fcdb3d4f8296fb54}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9734eeff45d3cbd51cfbfec6b26ab3ed}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{57e8133c33f9bfe5d517948674bff2f6}
+      \strng{fullhash}{57e8133c33f9bfe5d517948674bff2f6}
+      \strng{bibnamehash}{57e8133c33f9bfe5d517948674bff2f6}
+      \strng{authorbibnamehash}{57e8133c33f9bfe5d517948674bff2f6}
+      \strng{authornamehash}{57e8133c33f9bfe5d517948674bff2f6}
+      \strng{authorfullhash}{57e8133c33f9bfe5d517948674bff2f6}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Censorship of Online Encyclopedias: Implications for NLP Models}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/2101.09294
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/2101.09294
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
