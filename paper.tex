@@ -138,6 +138,7 @@ Empirical studies further illustrates the severity of this vulnerability. Pan et
 Ultimately, these findings highlight a critical vulnerability in current LLM architectures: the lack of robust mechanisms for filtering or fact-checking information during training. Even small amounts of misinformation in training data can have disproportionate effects on model behavior, particularly when that misinformation is reinforced through multiple sources or presented with high confidence in the training corpus. In this way, intentional data poisoning and unintentional disinformation reproduction are not isolated problems, but mutually reinforcing threats that challenge the integrity, safety, and societal impact of large language models.
 
 
+
 \section{Experiment}
 In our experiment, we aim to explore whether we can detect patterns of disinformation reproduction or misinformation in ChatGPT-4 outputs when presented with statements of varying truthfulness.
 
@@ -146,7 +147,7 @@ We follow a similar empirical design framework as used by Ahmed and Knockel \cit
 
 This dataset has been used as a benchmark for LLM fake-news detection. We believe, furthermore, it can be used to measure the impact of censorship via disinformation on the output of LLMs. The dataset is particularly relevant since it mostly includes U.S. political statements and reflects current content moderation standards, which could be considered as an additional layer of censorship that may impact the web training data of LLMs. 
 
-Our experiment is as follows. First, we sample 100 rows from the LIAR dataset. Then, we remove all the associated information and save a CSV with only the online statements. Then, we prompt ChatGPT-4 in a new session with settings that prevent it from using any previous data from other chats. We provide it the statements and ask it to label each statement with an integer 0-5, 0 being most false and 5 being the most true. We also ask it to attach a rationale for each rating. The LLM outputs are in CSV format, which is then parsed and compared with the original human-provided labels and rationale in the LIAR dataset.
+Our experiment is as follows. First, we sample 100 rows from the LIAR dataset. Then, we remove all the associated information and save a CSV with only the online statements. Then, we prompt ChatGPT-4 in a new session with settings that prevent it from using any previous data from other chats. We provide it the statements and ask it to label each statement with an integer 0-5, 0 being most false and 5 being the most true. We also ask it to attach a rationale for each rating. The LLM outputs are in CSV format, which is then parsed and compared with the original human-provided labels and rationale in the LIAR dataset.\footnote{Link to our GitHub: \url{https://github.com/cnk2-rgb/censorship-llm-project/tree/main}}
 
 
 \subsection{Results}
@@ -195,7 +196,6 @@ We acknowledge that our experiment focuses exclusively on U.S. political stateme
 Firewalls and disinformation operate within a broader ecosystem of censorship that compounds through the LLM training pipeline in three critical stages. First, input filtering occurs when firewalls and blocking mechanisms prevent certain content from ever being scraped or included in training datasets. This creates systematic gaps in the model's knowledge base. Second, data poisoning through flooding and disinformation actively injects false information into training corpora, corrupting the data that models do have access to. Finally, amplification occurs when models trained on censored or poisoned data reinforce biases or incorrect information in their outputs, potentially feeding back into the information ecosystem and creating a self-reinforcing cycle of misinformation.
 
 This pipeline reveals a fundamental challenge in LLM development: unlike human-facing censorship—where blocked websites or restricted content signal that information is being withheld—LLM censorship operates silently and leaves no trace. An LLM that never encountered certain information during training cannot tell us what it doesn't know, and users have no way to detect the absence of information. This invisibility creates a situation where we are building AI systems that don't just reflect censorship but naturalize it, presenting incomplete or biased views of reality as comprehensive and authoritative. As LLMs become increasingly integrated into information retrieval, content creation, and decision-making systems, these hidden biases may propagate throughout digital information ecosystems, potentially reshaping public discourse and knowledge production in ways that are difficult to detect or counteract.
-
 
 \label{lastpage}
 
