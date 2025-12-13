@@ -3,6 +3,7 @@
 % General
 % -------
 \usepackage{pdflscape}
+\usepackage{graphicx}
 
 % Bibliography
 % ------------
@@ -10,6 +11,7 @@
 
 % Commands
 % --------
+\graphicspath{ {./images/} }
 
 \pgfsetarrows{latex-latex}
 \tikzset{%
@@ -155,6 +157,20 @@ This dataset has been used as a benchmark for LLM fake-news detection. We believ
 Our experiment is as follows. First, we sample 100 rows from the LIAR dataset. Then, we remove all the associated information and save a CSV with only the online statements. Then, we prompt ChatGPT-4 in a new session with settings that prevent it from using any previous data from other chats. We provide it the statements and ask it to label each statement with an integer 0-5, 0 being most false and 5 being the most true. We also ask it to attach a rationale for each rating. The LLM outputs are in CSV format, which is then parsed and compared with the original human-provided labels and rationale in the LIAR dataset.
 
 \subsection{Results}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{absolute-histogram.png}
+    \caption{Histogram of absolute difference in truth ratings between human and ChatGPT.}
+    \label{fig:abs-hist}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{relative-histogram.png}
+    \caption{Histogram of relative difference in truth ratings between human and ChatGPT.}
+    \label{fig:rel-hist}
+\end{figure}
 
 \subsection{Analysis}
 
